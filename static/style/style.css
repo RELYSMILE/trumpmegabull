@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    /* border: 2px solid yellow; */
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+    font-family: Arial;
+}
+.main-container{
+    padding: 0 3rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 95%;
+    margin-top: -10rem;
+    z-index: 1;
+}
+.sm{
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.logo img{
+    border: 2px solid #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    box-shadow: 1px 1px 20px #fff;
+}
+.logo h1{
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    text-transform: capitalize;
+    font-family: Forte;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 2.5rem;
+}
+nav div{
+    background: transparent;
+    height: fit-content;
+    padding: .3rem;
+    border-bottom: none;
+    border-radius: .2rem;
+    transition: .3s;
+}
+
+.trump-head{
+    width: 20rem;
+    margin: 10rem auto;
+}
+.img-bull-head img{
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 1px 1px 15rem red;
+    border-radius: 100%;
+    border: 2px solid rgb(105, 1, 1);
+    transition: .5s;
+}
+.img-bull-head img:hover{
+    opacity: .3;
+    transition: .5s;
+    box-shadow: 1px 1px 15rem #ffffff;
+}
+.trump-head h1{
+    text-align: center;
+    font-family: Comic Sans MS;
+    letter-spacing: 4px;
+}
+.trump-head .bl{
+    text-align: center;
+}
+.buy-coin, .link{
+    text-align: center;
+    text-decoration: none;
+    background: #0085a7;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    margin-left: 6rem;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 20rem #0085a7;
+    padding: 2rem;
+    border-radius: .3rem;
+    background: #03001abe;
+}
+.intro .flash{
+    width: 50%;
+}
+.intro div h1{
+    text-align: center;
+    font-family: Comic Sans MS;
+    letter-spacing: 4px;
+}
+.intro div p{
+    text-align: justify;
+    transition: .3s;
+    margin-top: 6rem;
+}
+.intro div p:hover{
+    line-height: 1.5rem;
+}
+.intro-img img{
+    box-shadow: 1px 1px 20px #0085a7;
+    opacity: .7;
+}
+
+.card-container{
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    box-shadow: 1px 1px 20rem #0085a7;
+    padding: 1.5rem;
+    border-radius: .9rem;
+    background: #000;
+    background-image: linear-gradient(90deg, #292828 0%, #433096 30%, #0574a0 100%);
+}
+
+.tokenomics{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.tokenomics h1{
+    font-family: Comic Sans MS;
+    text-align: justify;
+}
+.tokenomics p{
+    line-height: 1.5rem;
+}
+.tokenomics .tokenomics-1{
+    font-weight: bold;
+    color: #0085a7;
+
+}
+.intro-1{
+    box-shadow: 1px 1px 20rem black;
+}
+.intro-1 .intro-img img{
+    border-radius: 100%;
+}
+.intro-1 .flash ul{
+    margin-left: 2rem;
+}
+.intro-1 .flash ul li{
+    margin-top: 2rem;
+    box-shadow: 1px 1px 10px rgb(117, 10, 117);
+    padding: .5rem .1rem;
+}
+.flash .buy-coin{
+    margin-left: 0rem;
+    margin-top: -3rem;
+}
+.footer{
+    padding: 6rem 0;
+    text-align: center;
+    box-shadow: 1px 1px 20rem #a32727;
+    background: #202020;
+    letter-spacing: .1rem;
+}
+
+@media (max-width: 1213px) {
+    .intro-img img{
+        width: 20rem;
+        height: 20rem;
+        margin-top: 4rem;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        width: 20rem;
+        text-align: center;
+        margin: 1rem auto;
+
+    }
+}
+
+@media (max-width: 845px) {
+    header{
+        width: 95%;
+        margin-left: -2rem;
+        margin-top: -5rem;
+    }
+    header .ls{
+        display: none;
+    }
+    .sm{
+        display: block;
+        margin-top: 5rem;
+        width: 20%;
+        height: 10rem;
+        margin-left: -13rem;
+        padding-left: 2rem;
+        transition: .6s;
+    }
+    .sm div{
+        margin-top: .5rem;
+    }
+    .logo{
+        width: 100%;
+        justify-content: left;
+    }
+    .burger{
+        width: 4rem;
+        height: .3rem;
+        background: #fff;
+
+    }
+    .burger-2{
+        width: 3rem;
+        margin-top: .5rem;
+    }
+    .burger-3{
+        width: 2rem;
+        margin-top: .5rem;
+    }
+    .burger-container{
+        margin-top: 1.5rem;
+        background: transparent;
+        height: fit-content;
+        padding: .9rem .7rem;
+        border-radius: .3rem;
+        margin-right: 2%;
+    }
+    .trump-head{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 789px) {
+    .intro{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro .flash{
+        width: 100%;
+    }
+    .main-container{
+        padding: 0;
+    }
+    header{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 661px) {
+    .logo{
+        justify-content: left;
+    }
+    .logo h1{
+       font-size: 1.5rem;
+       height: fit-content;
+    }
+    .tokenomics{
+        width: 85%;
+    }
+}
+@media (max-width: 557px) {
+    header{
+        width: 95%;
+    }
+    .logo h1{
+        width: fit-content;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 545px) {
+    header{
+        width: 95%;
+    }
+    .logo{
+        width: fit-content;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 477px) {
+    .intro-img img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .card{
+        width: 15rem;
+    }
+}
+@media (max-width: 409px) {
+    .intro-img img{
+        width: 12rem;
+        height: 12rem;
+    }
+    .trump-head{
+        width: 90%;
+        margin: 10rem auto;
+    }
+    .tokenomics{
+        padding: 0rem;
+    }
+    .img-bull-head img{
+        width: 15rem;
+        height: 15rem;
+        margin-left: 3rem;
+    }
+    .trump-head .buy-coin{
+        margin-left: 8rem;
+    }
+    .card{
+        width: 12rem;
+    }
+    .burger-container{
+        padding: .6rem .4rem;
+    }
+}
+
+@media (max-width: 390px) {
+    header{
+        width: 95%;
+    }
+    .burger{
+        width: 2rem;
+        height: .2rem;
+    }
+    .burger-2{
+        width: 2rem;
+
+    }
+    .burger-3{
+        width: 2rem;
+    }
+    .trump-head .buy-coin{
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 349px) {
+    .img-bull-head img{
+        margin-left: 1rem;
+    }
+    .trump-head .buy-coin{
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 290px) {
+    .card{
+        width: 10rem;
+    }
+    .card img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .img-bull-head img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .trump-head .buy-coin{
+        font-size: .8rem;
+        margin-left: 4rem;
+    }
+}
