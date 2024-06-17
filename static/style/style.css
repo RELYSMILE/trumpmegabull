@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     /* border: 2px solid yellow; */
 }
 a{
@@ -11,7 +11,6 @@ a{
 
 body{
     background: #000;
-    font-family: Arial;
 }
 .main-container{
     padding: 0 3rem;
@@ -153,6 +152,20 @@ nav div{
     margin: 0 auto;
     padding: 2rem;
 }
+.tokenomics table{
+    border-radius: 1rem;
+}
+.tokenomics table th, td{
+    padding: .8rem;
+    text-align: left;
+    border: 2px solid rgb(55, 6, 78);
+    border-radius: 1rem;
+    background: #000;
+    background-image: linear-gradient(90deg, #292828 0%, #433096 30%, #000 100%);
+}
+.tokenomics table td{
+    border-radius: 0;
+}
 .tokenomics h1{
     font-family: Comic Sans MS;
     text-align: justify;
@@ -191,6 +204,15 @@ nav div{
     box-shadow: 1px 1px 20rem #a32727;
     background: #202020;
     letter-spacing: .1rem;
+}
+.partiner h1, .contact h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: .8rem 0;
+    box-shadow: 1px 1px 10px #000;
+}
+.caa{
+    display: none;
 }
 
 @media (max-width: 1213px) {
@@ -301,6 +323,7 @@ nav div{
     .icon{
         width: 50%;
     }
+    
 }
 @media (max-width: 557px) {
     header{
@@ -330,6 +353,9 @@ nav div{
     }
     .icon{
         width: 55%;
+    }
+    table td .ca{
+        font-size: .6rem;
     }
 }
 @media (max-width: 409px) {
@@ -383,6 +409,18 @@ nav div{
     }
     .burger-3{
         width: 2rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .ca{
+        display: none;
+    }
+    .caa{
+        display: block;
+    }
+    table td{
+        font-size: .6rem;
     }
 }
 
