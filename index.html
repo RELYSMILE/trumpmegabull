@@ -127,9 +127,12 @@
                 </table><br>
                 <div class="contractAddress-cont">
                     <h1>CA</h1><br>
-                    <div class="contractAddress">0x0b399Dfea1811Aa1fCAA5749be10d3cD188066c3</div>
+                    <div class="contractAddress" id="contractAddress">0x0b399Dfea1811Aa1fCAA5749be10d3cD188066c3</div>
+                    <br><a onclick="copyToClipboard()" class="buy-coin" style="background: gold; cursor: pointer;">Copy</a>
                 </div>
         </section>
+
+        
 
         <section class="trump-head">
             <div class="img-bull-head">
@@ -192,6 +195,18 @@
             offset: 300,
             duration: 1000
         });
+
+        function copyToClipboard() {
+            var contractAddress = document.getElementById('contractAddress').innerText;
+            var tempInput = document.createElement('input');
+            tempInput.value = contractAddress;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Contract address copied to clipboard: ' + contractAddress);
+        }
       </script>
 </body>
 </html>
