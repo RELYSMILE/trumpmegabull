@@ -16,7 +16,7 @@
 <body>
     <div class="main-container">
         <header>
-            <a href="">
+            <a href="#">
                 <div class="logo">
                     <img src="static/images/t5.png" alt="company-logo">
                     <h1>trump megabull</h1>
@@ -36,26 +36,20 @@
                 <div class="burger burger-3" onclick="toggle()"></div>
             </div>
         </header>
-        <div onclick="toggleClose()">
-        <div class="sm" id="sm"><br><br>
-            <a href="#documents"><div>About</div></a>
-            <a href="#whytrumb"><div>WHY TRUMB</div></a>
-            <a href="#tokenomics"><div>TOKENOMICS</div></a>
-            <a href="#howtobuy"><div>HOW TO BUY</div></a>
-            <a href="#whitepaper"><div>whitepaper</div></a>
-            <a href="#partners"><div>Partners</div></a>
-            <a href="#contactUs"><div>Contact Us</div></a>
-            <a href="https://t.me/trumpmegabull"><div>Telegram</div></a>
+        <div class="sm" id="sm">
+        <div><br><br><br><br><br><br><br>
+            <a href="#documents" onclick="toggleClose()"><div>About</div></a>
+            <a href="#whytrumb" onclick="toggleClose()"><div>WHY TRUMB</div></a>
+            <a href="#tokenomics" onclick="toggleClose()"><div>TOKENOMICS</div></a>
+            <a href="#howtobuy" onclick="toggleClose()"><div>HOW TO BUY</div></a>
+            <a href="#whitepaper" onclick="toggleClose()"><div>whitepaper</div></a>
+            <a href="#partners" onclick="toggleClose()"><div>Partners</div></a>
+            <a href="#contactUs" onclick="toggleClose()"><div>Contact Us</div></a>
+            <a href="https://t.me/trumpmegabull" onclick="toggleClose()"><div>Telegram</div></a>
         </div>
-        <script>
-            var sm = document.getElementById("sm")
-            function toggle(){
-                sm.style.marginLeft = '0rem';
-            }
-            function toggleClose(){
-                sm.style.marginLeft = '-13rem';
-            }
-        </script>
+    </div>
+        <div onclick="toggleClose()" class="content">
+        
         <section class="trump-head" onclick="toggleClose()">
             <div class="img-bull-head">
                 <img src="static/images/t5.png" alt="trump-megabull">
@@ -74,7 +68,10 @@
                 <h1>TRUMP MEGABULL</h1>
                 <p data-aos="slide-up">TRUMP MEGABULL is a revolutionary memecoin built on the Base Mainnet, designed to merge the vibrant world of cryptocurrency with the humor and satire of modern political and pop culture. TRUMP MEGABULL is poised to deliver an unparalleled trading experience. Join us on Uniswap and be a part of the bullish charge! <br><br>TRUMP MEGABULL is now available on Uniswap, offering a user-friendly platform for buying, selling, and trading. Be a part of the bullish charge and experience the fusion of cutting-edge blockchain technology with the playful spirit of memecoins.
 
-                Join us on Uniswap and be a part of the TRUMP MEGABULL revolution!</p>
+                Join us on Uniswap and be a part of the TRUMP MEGABULL revolution!</p><br><br><br><br>
+                <div class="icon">
+                    <a class="buy-coin" href="https://fatsale.app/#/presale/fair-detail/0x7761400ACfCF70d1eD3bB5703f883FC287cDCF0C?chain=base">FAIR LAUNCHING</a>
+                    </div>
             </div>
             <div class="intro-img">
                 <img src="static/images/t1.png" alt="">
@@ -160,7 +157,7 @@
         </section>
     </div>
     </div>
-    <section class="footer">
+    <section class="footer" onclick="toggleClose()">
         <div class="partiner" id="partners">
             <h1>Partners</h1><br><br>
             <div class="logo-img">
@@ -180,7 +177,7 @@
         <div class="contact" id="contactUs"><br><br>
             <h1>Contact Us</h1><br>
             <small>Feel free and contact us if you have any question! Otherwise you can also find us in our Telegram group</small><br><br>
-            <small>Email: trumpmegabull@gmail.com, christrumb@gmail.com</small>
+            <small>Email: trumpmegabull@gmail.com, christrumb@gmail.com, princemegabull@gmail.com</small>
         </div><br><br>
         <div class="icon">
             <a href="https://x.com/trumpmegabull"><i class="fa-brands fa-square-x-twitter fa-beat" style="color: #fff;"></i></a>
@@ -191,20 +188,40 @@
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        var sm = document.getElementById("sm")
+        function toggle(){
+            sm.style.marginLeft = '0rem';
+        }
+        function toggleClose(){
+            sm.style.marginLeft = '-14rem';
+        }
+    </script>
+    <script>
         AOS.init({
             offset: 300,
             duration: 1000
         });
 
         function copyToClipboard() {
+            // Get the contract address text
             var contractAddress = document.getElementById('contractAddress').innerText;
+            
+            // Create a temporary input element to hold the text
             var tempInput = document.createElement('input');
             tempInput.value = contractAddress;
             document.body.appendChild(tempInput);
+            
+            // Select the text in the input element
             tempInput.select();
-            tempInput.setSelectionRange(0, 99999);
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+            
+            // Copy the text to the clipboard
             document.execCommand('copy');
+            
+            // Remove the temporary input element
             document.body.removeChild(tempInput);
+            
+            // Optionally, you can show a message or alert
             alert('Contract address copied to clipboard: ' + contractAddress);
         }
       </script>
