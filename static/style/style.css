@@ -264,7 +264,7 @@ nav div{
     header{
         width: 95%;
         margin-left: -2rem;
-        margin-top: -25rem;
+        margin-top: -15rem;
         z-index: 1;
     }
     header .ls{
@@ -273,7 +273,7 @@ nav div{
     .sm{
         display: block;
         position: fixed;
-        margin-top: -25rem;
+        margin-top: -15rem;
         margin-left: -14rem;
         background: #000032;
         box-shadow: 1px 1px .8rem goldenrod;
@@ -282,13 +282,14 @@ nav div{
         width: 10rem;
         height: 50rem;
         z-index: 1;
+        opacity: .95;
         transition: 1s ease-in-out;
     }
     .sm div a div{
         margin-bottom: 1.1rem;
     }
     .content{
-        margin-top: 25rem;
+        margin-top: 15rem;
     }
 
     .logo{
