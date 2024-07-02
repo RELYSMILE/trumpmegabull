@@ -275,7 +275,7 @@ nav div{
         position: fixed;
         margin-top: -25rem;
         margin-left: -14rem;
-        background: linear-gradient(50deg, gold 0%, 000032 30%, #000032 100%);
+        background: #000032;
         box-shadow: 1px 1px .8rem goldenrod;
         border-radius: 0 0 10rem 0;
         padding: 1.2rem;
