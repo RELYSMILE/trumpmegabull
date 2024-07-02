@@ -231,6 +231,9 @@ nav div{
 .contractAddress::-webkit-scrollbar{
     display: none;
 }
+.burger-container{
+    display: none;
+}
 
 @media (max-width: 1213px) {
     .intro-img img{
@@ -257,26 +260,37 @@ nav div{
 }
 
 @media (max-width: 845px) {
+
     header{
         width: 95%;
         margin-left: -2rem;
-        margin-top: -5rem;
+        margin-top: -25rem;
+        z-index: 1;
     }
     header .ls{
         display: none;
     }
     .sm{
         display: block;
-        margin-top: 5rem;
-        width: 30%;
-        height: 10rem;
-        margin-left: -13rem;
-        padding-left: 2rem;
-        transition: .6s;
+        position: fixed;
+        margin-top: -25rem;
+        margin-left: -14rem;
+        background: linear-gradient(50deg, gold 0%, 000032 30%, #000032 100%);
+        box-shadow: 1px 1px .8rem goldenrod;
+        border-radius: 0 0 10rem 0;
+        padding: 1.2rem;
+        width: 10rem;
+        height: 50rem;
+        z-index: 1;
+        transition: 1s ease-in-out;
     }
-    .sm div{
-        margin-top: .5rem;
+    .sm div a div{
+        margin-bottom: 1.1rem;
     }
+    .content{
+        margin-top: 25rem;
+    }
+
     .logo{
         width: 100%;
         justify-content: left;
@@ -296,6 +310,7 @@ nav div{
         margin-top: .5rem;
     }
     .burger-container{
+        display: block;
         margin-top: 1.5rem;
         background: transparent;
         height: fit-content;
